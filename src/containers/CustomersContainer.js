@@ -57,10 +57,4 @@ CustomersContainer.propTypes = {
     fetchCustomers: PropTypes.func.isRequired,
 };
 
-const mapDispatchToProps = dispatch => (
-    {
-        fetchCustomers: () => dispatch(fetchCustomers())
-    }  
-);
-
-export default withRouter(connect(null, mapDispatchToProps)(CustomersContainer));
+export default withRouter(connect(null, { fetchCustomers })(CustomersContainer));
