@@ -1,14 +1,23 @@
 {
   "customers": [
-    { "dni": "16479601-9",
-      "name": "Mirson Camadro",
-      "age": 32 },
-    { "dni": "26479601-9",
+    {
+      "id": "164796019",
+      "dni": "164796019",
+      "name": "hola hola asda sa",
+      "age": 32
+    },
+    {
+      "id": "264796019",
+      "dni": "264796019",
       "name": "Young Mirson Camadro",
-      "age": 12 },
-    { "dni": "6479601-9",
+      "age": 12
+    },
+    {
+      "id": "64796019",
+      "dni": "64796019",
       "name": "Old Mirson Camadro",
-      "age": 52 }
+      "age": 52
+    }
   ],
   "posts": [
     {
