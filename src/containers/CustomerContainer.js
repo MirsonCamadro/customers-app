@@ -12,7 +12,7 @@ import { updateCustomer } from '../actions/updateCustomer';
 class CustomerContainer extends Component {
 
     componentDidMount() {
-        if (!this.props.customer){
+        if (this.props.customers.length === 0){
             this.props.fetchCustomers();
         }
     }
