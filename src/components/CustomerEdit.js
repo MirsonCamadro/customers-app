@@ -4,6 +4,8 @@ import { reduxForm, Field } from 'redux-form';
 import { setPropsAsInitial } from '../helpers/setPropsAsInitial';
 import CustomerActions from './CustomerActions';
 import { Prompt } from 'react-router';
+import { CUSTOMER_EDIT } from '../constants/permissions';
+import { accessControl } from '../helpers/accessControl';
 
 const isRequired = value => (
     !value && "Este campo es requerido"
@@ -107,4 +109,4 @@ CustomerEdit.propTypes = {
 
 const CustomerEditForm = reduxForm({ form: 'CustomerEdit', validate })(CustomerEdit)
 
-export default setPropsAsInitial(CustomerEditForm);
+export default accessControl([CUSTOMER_EDIT])(setPropsAsInitial(CustomerEditForm));
